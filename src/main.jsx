@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 import App from './App';
 import Error from './pages/Error';
+import Home from './pages/Home';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
+      {
+        index: true,
+        element: <Home />,
+      },
     ],
   },
 ]);
