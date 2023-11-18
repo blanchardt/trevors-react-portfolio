@@ -1,10 +1,40 @@
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
+import { Link } from 'react-router-dom';
+
+//set up the navigation tabs that will be located in the header.
 function Navigation() {
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">
-        test
+        <Link
+          to="/"
+          className="nav-link"
+        >
+          About
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Portfolio"
+          className="nav-link"
+        >
+          Portfolio
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Contact"
+          className="nav-link"
+        >
+          Contact
+        </Link>
+      </li>
+      <li className="nav-item">
+        <Link
+          to="/Resume"
+          className="nav-link"
+        >
+          Resume
+        </Link>
       </li>
     </ul>
   );
