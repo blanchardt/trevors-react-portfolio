@@ -1,6 +1,7 @@
 //Bringing in the required import from 'react-router-dom'
 import { Outlet } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   //swap between the different pages and have a consistent header and footer for each page.
@@ -10,6 +11,7 @@ function App() {
       <main className="mx-3">
         <Outlet />
       </main>
+      <Footer />
     </>
   );
 }
