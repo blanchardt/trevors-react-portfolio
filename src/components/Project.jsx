@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-//display the projects onto the page when called.
+//display a given project onto the page when called.
 function Project({ projectImage, imageTitle, linkDestination, title, description}) {
   return(
     <div>
