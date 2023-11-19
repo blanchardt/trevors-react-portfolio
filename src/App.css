@@ -1,0 +1,72 @@
+:root {
+  --primary: #8d9c98;
+  --secondary: lightcoral;
+  --text-color: white;
+  --link-color: rgba(255, 255, 255, 0.459);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 24px;
+}
+
+body {
+  background-color: var(--primary);
+}
+
+header {
+  background-color: var(--secondary);
+  align-items: center;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 150%;
+  margin-bottom: 0px !important;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+/*styling for the header and navigation based off the class names.*/
+.right-nav {
+  float: right;
+}
+
+.custom-nav {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.custom-nav:focus {
+  color: var(--primary);
+}
+
+.custom-nav:hover {
+  color: var(--text-color);
+}
+
+.active.custom-nav:hover {
+  color: var(--primary);
+}
+
+
+
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
