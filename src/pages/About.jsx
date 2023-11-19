@@ -1,12 +1,14 @@
 export default function Home() {
   return (
     <div>
-      <img
-        alt="Trevor Blanchard"
-        className="img-fluid pt-5"
-        src="../assets/images/my_pic.jpg"
-      />
-      <p>
+      <div className="col-2 pt-5">
+        <img
+          alt="Trevor Blanchard"
+          className="img-fluid profile-image"
+          src="../assets/images/my_pic2.jpg"
+        />
+      </div>
+      <p className="pt-4">
           My name is Trevor Blanchard. I graduated from Manchester West High School in 2017.  I graduated in the top 20 percentile and 
           I was an honor student all 4 years of High School.  I was the first and only student in 2017 to graduate from Manchester West 
           High School with the New Hampshire Scholar, proficient in STEM. I was part of the First Robotics team all 4 years of High School, 

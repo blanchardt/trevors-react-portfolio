@@ -52,6 +52,13 @@ h1 {
   color: var(--primary);
 }
 
+/*about me image styling*/
+/*went to https://stackoverflow.com/questions/51447317/image-height-same-as-width to figure out how to have the height and width be the same.*/
+.profile-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
 
 
 
