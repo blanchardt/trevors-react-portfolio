@@ -121,6 +121,10 @@ input, textarea {
   color: var(--project--text)
 }
 
+.project-title:hover {
+  text-decoration: underline;
+}
+
 .project-description {
   position: absolute;
   bottom: 35px;
