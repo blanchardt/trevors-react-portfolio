@@ -42,7 +42,7 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
+h2, h3 {
   font-size: 125%;
 }
 
@@ -58,7 +58,7 @@ input, textarea {
 
 .custom-btn {
   background: var(--btn--color);
-  color: var(--text--color)
+  color: var(--text--color);
 }
 
 .custom-btn:hover {
@@ -152,6 +152,11 @@ input, textarea {
   background-color: var(--link--color);
 }
 
+/*styling for the resume page*/
+.download-link {
+  color: var(--btn--color);
+  text-decoration: none;
+}
 
 
 .icons {

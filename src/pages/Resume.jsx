@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
+import pdf from "../components/files/TrevorBlanchardResume.pdf"
 
 export default function Resume() {
   return (
     <div className="container">
       <h2 className='pt-3 pb-5'>Contact</h2>
-      <p className="pb-2">Download my <Link to="../assets/files/Trevor%20Blanchard%20Resume.pdf">resume</Link></p>
+      {/*went to https://stackoverflow.com/questions/69289110/how-to-create-a-download-link-pdf-in-react to learn how to set up a link to download a pdf*/}
+      <p className="pb-2">Download my <a className="download-link" href={pdf} download="TrevorBlanchardResume.pdf">resume</a></p>
       <h3>Front-end Proficiencies</h3>
       <ul>
         <li>HTML</li>
