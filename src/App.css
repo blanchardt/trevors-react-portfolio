@@ -1,8 +1,9 @@
 :root {
   --primary: #8d9c98;
   --secondary: lightcoral;
-  --text-color: white;
-  --link-color: rgba(255, 255, 255, 0.459);
+  --text--color: white;
+  --project--text: #526660;
+  --link--color: rgba(255, 255, 255, 0.562);
 }
 
 * {
@@ -15,6 +16,7 @@
 
 body {
   background-color: var(--primary);
+  color: var(--text--color);
 }
 
 header {
@@ -32,11 +34,20 @@ footer {
 }
 
 h1 {
-  color: var(--text-color);
+  color: var(--text--color);
   font-size: 150%;
   margin-bottom: 0px !important;
   margin-left: 10px;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 125%;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
 }
 
 /*styling for the header and navigation based off the class names.*/
@@ -45,7 +56,7 @@ h1 {
 }
 
 .custom-nav {
-  color: var(--text-color);
+  color: var(--text--color);
   font-weight: bold;
 }
 
@@ -54,7 +65,7 @@ h1 {
 }
 
 .custom-nav:hover {
-  color: var(--text-color);
+  color: var(--text--color);
 }
 
 .active.custom-nav:hover {
@@ -73,6 +84,57 @@ h1 {
 .footer-img-links {
   max-width: 5%;
   height: auto;
+}
+
+/*styles for project page classes*/
+.project-image {
+  max-width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+.project-info {
+  visibility: hidden;
+  color: var(--project--text)
+}
+
+.project-title {
+  font-size: 120%;
+  position: absolute;
+  bottom: 150px;
+  left: 25px;
+  text-decoration: none;
+  color: var(--project--text)
+}
+
+.project-description {
+  position: absolute;
+  bottom: 35px;
+  left: 25px;
+}
+
+.project-git {
+  width: 33px;
+  aspect-ratio: 1 / 1;
+}
+
+.project-link {
+  position: relative;
+}
+
+.project-link:hover .project-info {
+  visibility: visible;
+}
+
+.project-link:hover .project-image {
+  mix-blend-mode: overlay;
+}
+
+.project-background {
+  background-color: transparent;
+}
+
+.project-link:hover .project-background {
+  background-color: var(--link--color);
 }
 
 

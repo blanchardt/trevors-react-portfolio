@@ -8,11 +8,13 @@ function App() {
   //swap between the different pages and have a consistent header and footer for each page.
   return (
     <>
-      <Header />
-      <main className="mx-3">
-        <Outlet />
-      </main>
-      <Footer />
+      <div className='page-content'>
+        <Header />
+        <main className="mx-3 pb-5">
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }
