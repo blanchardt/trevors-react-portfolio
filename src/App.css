@@ -20,6 +20,15 @@ body {
 header {
   background-color: var(--secondary);
   align-items: center;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 h1 {
@@ -58,6 +67,12 @@ h1 {
   width: 100%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
+}
+
+/*footer class styling*/
+.footer-img-links {
+  max-width: 5%;
+  height: auto;
 }
 
 
