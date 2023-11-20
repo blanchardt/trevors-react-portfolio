@@ -34,7 +34,7 @@ Resume:
 ## Credits  
 Created by: Trevor Blanchard  
 Link to repo: https://github.com/blanchardt/trevors-react-portfolio   
-Link to live site:   
+Link to live site: https://trevors-react-portfolio.netlify.app/Portfolio   
 
 ### Resume.jsx  
 
