@@ -4,6 +4,7 @@
   --text--color: white;
   --project--text: #526660;
   --link--color: rgba(255, 255, 255, 0.562);
+  --btn--color: rgb(245, 181, 181);
 }
 
 * {
@@ -48,6 +49,20 @@ h2 {
 #root {
   position: relative;
   min-height: 100vh;
+}
+
+/*form styling for the contact page*/
+input, textarea {
+  width: 100%;
+}
+
+.custom-btn {
+  background: var(--btn--color);
+  color: var(--text--color)
+}
+
+.custom-btn:hover {
+  background: var(--secondary);
 }
 
 /*styling for the header and navigation based off the class names.*/

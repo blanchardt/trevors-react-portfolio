@@ -77,29 +77,40 @@ function Contact() {
   };
 
   return (
-    <div className="container text-center">
-      <form className="form" onSubmit={handleFormSubmit}>
+    <div className="container">
+      <h2 className='pt-3'>Contact</h2>
+      <form className="form col-5 pb-4" onSubmit={handleFormSubmit}>
+        <label htmlFor="name">Name:</label>
         <input
           value={name}
           name="name"
+          id="name"
           onChange={handleInputChange}
           type="text"
+          className='pb-1'
         />
+        <label htmlFor='email'>Email address:</label>
         <input
           value={email}
           name="email"
+          id='email'
           onChange={handleInputChange}
           type="text"
+          className='pb-1'
         />
+        <label htmlFor='message'>Message:</label>
         <textarea 
           value={message}
           name="message"
-          onChange={handleInputChange} rows="8">
+          id='message'
+          onChange={handleInputChange} 
+          className='pb-1'
+          rows="8">
         </textarea>
 
         <p>{issue}</p>
 
-        <button type="submit">
+        <button type="submit" className='btn custom-btn'>
           Submit
         </button>
       </form>
